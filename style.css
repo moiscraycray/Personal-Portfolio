@@ -1,0 +1,64 @@
+/* pacman
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+body > div {
+  margin: 0 9px;
+}
+
+body > div:first-child {
+  margin-left: 0;
+  margin-right: 45px;
+}
+
+body > div:last-child {
+  margin-right: 0;
+}*/
+
+/*ABOUT ME SECTION START*/
+.main-heading {
+  text-align: center;
+}
+
+.me {
+  max-width: 200px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.about-me {
+  text-align: center;
+}
+
+.interests {
+  text-align: center;
+}
+/*END ABOUT ME SECTION*/
+
+/* EXPERIENCE SECTION*/
+.experience-list {
+  text-align: center;
+}
+/* END EXPERIENCE SECTION*/
+
+/*SKILLS SECTION*/
+.skills-list {
+  text-align: center;
+}
+
+.font-mfizz {
+  font-size: 5em;
+}
+/*END SKILLS SECTION*/
