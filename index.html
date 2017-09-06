@@ -8,137 +8,220 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
     integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
     crossorigin="anonymous"> <!-- bootstrap cdn -->
-    <link rel="stylesheet" href="style.css"> <!-- css link -->
-    <script type="text/javascript" src="script.js"></script> <!-- javascript link -->
+    <link rel="stylesheet" href="./style.css"> <!-- css link -->
+    <!-- <script type="text/javascript" src="./pacman.js"></script>  javascript link -->
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"> <!-- favicon -->
     <script src="https://use.fontawesome.com/bbdaecabea.js"></script> <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css"> <!-- font mfizz cdn -->
   </head>
+
   <body>
 
-    <!-- Pacman -->
-    <!-- <div class="pacman"></div>
-    <div class="blinky"></div>
-    <div class="pinky"></div>
-    <div class="inky"></div>
-    <div class="clyde"></div> -->
-    <!-- end Pacman -->
-
-    <!-- Landing cover -->
-    <!-- end Landing cover -->
-
-
-    <div class="container">
-
-      <!-- About -->
-      <h1 class="main-heading">about me</h1>
-      <div class="image-me">
-        <img class="me" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA26AAAAJDI5YjM2ZGFkLWQ5YTItNGEwOC05MDBhLWU3MGJmM2VhYjM1Mw.jpg" alt="olivia">
+    <!-- Landing video cover -->
+    <div class="hero-wrapper">
+      <div class="hero">
+        <figure>
+          <video loop="loop" muted="muted" autoplay="autoplay">
+            <source src="./clovelly_edited.mp4"/>
+          </video>
+        </figure>
       </div>
-
-      <div class="row about-me">
-        <div class="col"></div>
-        <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6">
-          <p>Hi, I'm Olivia Mo. My friends call me "mo" or "momo" I'm an aspiring fullstack developer based in Sydney, Australia.</p>
-          <p>I like ideas, especially weird, wacky, or simple ones.
-            The best part is having fun while building them.
-            When I'm not building apps, you can find me chilling around the eastern beaches.
-            Otherwise, I'll be wrecking noobs on Overwatch.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div> <!-- end rox "about-me" -->
-
-      <br><br>
-
-      <div class="interests">
-        <div class="row">
-          <div class="col">
-            <h6>my interests</h6>
-          </div>
-        </div>
-
-        <div class="row info-icons"> <!-- font awesome icons -->
-          <div class="col">
-            <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-paw fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-film fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-rebel fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-cutlery fa-3x" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div> <!-- end interests line -->
-
     </div>
+    <div class="logo-img">
+      <img src="./M/transparent_m_white.png" alt="">
+    </div>
+    <div class="scroll-down">
+      <h2>scroll</h2>
+      <span>▼</span>
+    </div>
+    <!-- video parallax https://codepen.io/ezeikel/pen/rVdbQE -->
+
+    <!-- end Landing video cover -->
+
+    <!-- About -->
+    <div class="about-me-div">
+
+      <div class="container">
+        <h1 class="main-heading">about me</h1>
+        <div class="image-me">
+          <img class="me" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA26AAAAJDI5YjM2ZGFkLWQ5YTItNGEwOC05MDBhLWU3MGJmM2VhYjM1Mw.jpg" alt="olivia">
+        </div>
+
+        <div class="row about-me">
+          <div class="col"></div>
+          <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6">
+            <p>Hi, I'm Olivia Mo. My friends call me "mo" or "momo" I'm an aspiring fullstack developer based in Sydney, Australia.</p>
+            <p>I like ideas, especially weird, wacky, or simple ones.
+              The best part is having fun while building them.
+              When I'm not building apps, you can find me chilling around the eastern beaches.
+              Otherwise, I'll be wrecking noobs on Overwatch.
+            </p>
+          </div>
+          <div class="col"></div>
+        </div> <!-- end row "about-me" -->
+
+        <br><br>
+
+        <div class="interests">
+          <div class="row">
+            <div class="col">
+              <h6>my interests</h6>
+            </div>
+          </div>
+
+          <div class="row"> <!-- font awesome icons -->
+            <div class="col">
+              <i class="fa fa-gamepad fa-3x interest-icons" aria-hidden="true"></i>
+              <i class="fa fa-paw fa-3x interest-icons" aria-hidden="true"></i>
+              <i class="fa fa-film fa-3x interest-icons" aria-hidden="true"></i>
+              <i class="fa fa-rebel fa-3x interest-icons" aria-hidden="true"></i>
+              <i class="fa fa-cutlery fa-3x interest-icons" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div> <!-- end interests line -->
+
+      </div> <!-- end container div -->
+    </div> <!-- end about-me-div -->
     <!-- end about -->
 
-    <br><br>
-
     <!-- What I've been up to  -->
-    <h1 class="main-heading">What I've been up to</h1>
+    <div class="experience-div">
+      <div class="container">
+        <h1 class="main-heading">What I've been up to</h1>
 
-    <div class="row experience-list">
-      <div class="col">
-        <p>Started Coder Academy</p>
-      </div>
-      <div class="col">
-        <p>2017</p>
-      </div>
-    </div>
+        <div class="row experience-list">
+          <div class="col">
+            <p>Started Coder Academy</p>
+          </div>
+          <div class="col">
+            <p>2017</p>
+          </div>
+        </div>
 
-    <div class="row experience-list">
-      <div class="col">
-        <p>2016</p>
-      </div>
-      <div class="col">
-        <p>Graduated from UNSW with BA Media (Public Relations & Advertising)</p>
-      </div>
-    </div>
+        <div class="row experience-list">
+          <div class="col">
+            <p>2016</p>
+          </div>
+          <div class="col">
+            <p>Graduated from UNSW with BA Media (Public Relations & Advertising)</p>
+          </div>
+        </div>
 
-    <div class="row experience-list">
-      <div class="col">
-        <p>General Store Manager at The Enigma Room PTY LTD</p>
-      </div>
-      <div class="col">
-        <p>2015</p>
-      </div>
-    </div>
+        <div class="row experience-list">
+          <div class="col">
+            <p>General Store Manager at The Enigma Room PTY LTD</p>
+          </div>
+          <div class="col">
+            <p>2015</p>
+          </div>
+        </div>
 
-    <div class="row experience-list">
-      <div class="col">
-        <p>2013</p>
-      </div>
-      <div class="col">
-        <p>Started at UNSW</p>
-      </div>
-    </div>
+        <div class="row experience-list">
+          <div class="col">
+            <p>2013</p>
+          </div>
+          <div class="col">
+            <p>Started at UNSW</p>
+          </div>
+        </div>
+
+      </div> <!-- end container div -->
+    </div> <!-- end experience div -->
     <!-- end What I've been up to  -->
 
     <!-- Skills -->
-    <h1 class="main-heading">skills</h1>
+    <div class="skills-div">
+      <div class="container">
+        <h1 class="main-heading">skills</h1>
 
-    <div class="row skills-list">
-      <div class="col">
-        <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
-      </div>
-      <div class="col">
-        <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
-      </div>
-      <div class="col font-mfizz">
-        <i class="icon-ruby"></i> <!-- Had to use mfizz for the following icons because font awesome is missing them -->
-      </div>
-      <div class="col font-mfizz">
-        <i class="icon-bootstrap"></i>
-      </div>
-      <div class="col font-mfizz">
-        <i class="icon-ruby-on-rails-alt"></i>
-      </div>
-    </div>
+        <div class="row skills-list">
+          <div class="col"></div>
+          <div class="col">
+            <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col">
+            <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col font-mfizz">
+            <i class="icon-ruby"></i> <!-- Had to use mfizz for the following icons because font awesome is missing them -->
+          </div>
+          <div class="col font-mfizz">
+            <i class="icon-bootstrap"></i>
+          </div>
+          <div class="col font-mfizz">
+            <i class="icon-ruby-on-rails-alt"></i>
+          </div>
+          <div class="col"></div>
+        </div> <!-- end row skills-list -->
+
+      </div> <!-- end container -->
+    </div> <!-- skills-div -->
     <!-- end Skills -->
 
     <!-- Portfoliio -->
-    <h1 class="main-heading">my works</h1>
+    <div class="works-div">
+      <div class="container">
+        <h1 class="main-heading">my works</h1>
+
+        <div class="row portfolio">
+          <div class="col"></div>
+          <div class="col portfolio-links">
+            <a href="https://github.com/moiscraycray/CFA---Project-1" target="_blank"><img src="./images/trent_edited.png" alt="Trent or Not"></a>
+          </div>
+          <div class="col portfolio-links">
+            <a href="https://github.com/moiscraycray/Tokyo-Olympics-2020" target="_blank"><img src="./images/tokyo_edited.png" alt="Tokyo Olympics 2020 Redesign Homepage"></a>
+          </div>
+          <div class="col portfolio-links">
+            <a href="https://amaysim.herokuapp.com/" target="_blank"><img src="./images/amaysim_edited.png"  alt="Amaysim"></a>
+          </div>
+          <div class="col"></div>
+        </div> <!-- end row portfolio div -->
+
+      </div> <!-- end container div -->
+    </div> <!-- end works-div -->
     <!-- end Portfoliio -->
+
+    <!-- Contact me -->
+    <div class="contact-me-div">
+      <div class="container">
+        <h1 class="main-heading">contact me</h1>
+
+        <div class="row">
+          <div class="col contact-me-icons">
+            <i class="fa fa-envelope fa-1x" aria-hidden="true"></i> oliviatymo@gmail.com
+          </div>
+          <div class="col contact-me-icons">
+            <i class="fa fa-mobile fa-1x" aria-hidden="true"></i> 0479 020 383
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col social-media-icons">
+            <a href="https://stackoverflow.com/users/6147947/cheese425?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-5x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/oliviatmo" target="_blank"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/olivia-mo-b13333b6/" target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+            <a href="https://steamcommunity.com/id/imdagiver" target="_blank"><i class="fa fa-steam-square fa-5x" aria-hidden="true"></i></a>
+            <a href="https://github.com/moiscraycray" target="_blank"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div> <!-- end container div -->
+    </div> <!-- end contact-me-div -->
+    <!-- end Contact me -->
+
+    <!-- Pacman -->
+    <!-- <div class="row">
+      <div class="col pacman">
+        <div class="pacman"></div>
+        <div class="blinky"></div>
+        <div class="pinky"></div>
+        <div class="inky"></div>
+        <div class="clyde"></div>
+      </div>
+    </div> -->
+    <!-- end Pacman -->
+
+
 
   </body>
 </html>
