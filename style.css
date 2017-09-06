@@ -1,36 +1,66 @@
-/* pacman
+
+/*LANDING COVER*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
+* {
+  font-family: "Open Sans";
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
 html, body {
+  width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
+figure {
+  margin: 0;
+  position: relative;
 }
 
-body > div {
-  margin: 0 9px;
+video {
+  width: 100%;
+  max-width: 100%;
 }
 
-body > div:first-child {
-  margin-left: 0;
-  margin-right: 45px;
+.hero-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -9999;
 }
 
-body > div:last-child {
-  margin-right: 0;
-}*/
+.scroll-down {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+/*END LANDING COVER*/
 
 /*ABOUT ME SECTION START*/
+.about-me-div {
+  height: 800px;
+  background: #FFAF33;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+
 .main-heading {
   text-align: center;
+  padding-top: 50px;
 }
 
 .me {
   max-width: 200px;
   border-radius: 100%;
+  border: 2px solid white;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -45,15 +75,34 @@ body > div:last-child {
 .interests {
   text-align: center;
 }
+
+.interest-icons {
+  padding-right: 10px;
+  padding-left: 10px;
+}
 /*END ABOUT ME SECTION*/
 
 /* EXPERIENCE SECTION*/
+.experience-div {
+  height: 800px;
+  background: #3383ff;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
 .experience-list {
   text-align: center;
 }
 /* END EXPERIENCE SECTION*/
 
 /*SKILLS SECTION*/
+.skills-div {
+  height: 800px;
+  background: tomato;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
 .skills-list {
   text-align: center;
 }
@@ -62,3 +111,78 @@ body > div:last-child {
   font-size: 5em;
 }
 /*END SKILLS SECTION*/
+
+/*PORTFOLIO SECTION*/
+.works-div {
+  height: 800px;
+  background: #34A853;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+.portfolio-links img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+/*END PORTFOLIO SECTION*/
+
+/*CONTACT ME SECTION*/
+.contact-me-div {
+  height: 800px;
+  background: #FFAF33;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+.contact-me-icons {
+  text-align: center;
+}
+
+.social-media-icons i {
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.social-media-icons i{
+  color: white;
+}
+
+.social-media-icons i:hover {
+  color: black;
+}
+
+.social-media-icons i:visited {
+  color: white;
+}
+/*END CONTACT ME SECTION*/
+
+/* PACMAN SECTION */
+
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+} */
+
+/*.pacman {
+  margin: 0 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pacman:first-child {
+  margin-left: 0;
+  margin-right: 45px;
+}
+
+.pacman:last-child {
+  margin-right: 0;
+}*/
