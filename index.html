@@ -10,6 +10,7 @@
     crossorigin="anonymous"> <!-- bootstrap cdn -->
     <link rel="stylesheet" href="./style.css"> <!-- css link -->
     <!-- <script type="text/javascript" src="./pacman.js"></script>  javascript link -->
+    <script type="text/javascript" src="script.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"> <!-- favicon -->
     <script src="https://use.fontawesome.com/bbdaecabea.js"></script> <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css"> <!-- font mfizz cdn -->
@@ -86,53 +87,39 @@
 
     <!-- What I've been up to  -->
     <div class="experience-div">
-      <div class="container">
-        <h1 class="main-heading">What I've been up to</h1>
-
-        <div class="row experience-list">
-          <div class="col">
-            <p>Started Coder Academy</p>
-          </div>
-          <div class="col">
-            <p>2017</p>
-          </div>
-        </div>
-
-        <div class="row experience-list">
-          <div class="col">
-            <p>2016</p>
-          </div>
-          <div class="col">
-            <p>Graduated from UNSW with BA Media (Public Relations & Advertising)</p>
-          </div>
-        </div>
-
-        <div class="row experience-list">
-          <div class="col">
-            <p>General Store Manager at The Enigma Room PTY LTD</p>
-          </div>
-          <div class="col">
-            <p>2015</p>
-          </div>
-        </div>
-
-        <div class="row experience-list">
-          <div class="col">
-            <p>2013</p>
-          </div>
-          <div class="col">
-            <p>Started at UNSW</p>
-          </div>
-        </div>
-
-      </div> <!-- end container div -->
+        <section class="timeline">
+          <ul>
+            <li>
+              <div>
+                <time>2017</time> Started Coder Academy
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2016</time> Graduated from UNSW with BA Media (Public Relations & Advertising)
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2015</time> General Store Manager at The Enigma Room PTY LTD
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2013</time> Started studying at UNSW
+              </div>
+            </li>
+          </ul>
+        </section>
+        <script type="text/javascript" src="script.js"></script>
+      <!--</div>   end container div -->
     </div> <!-- end experience div -->
     <!-- end What I've been up to  -->
 
     <!-- Skills -->
     <div class="skills-div">
       <div class="container">
-        <h1 class="main-heading">skills</h1>
+        <h1 class="main-heading skills-heading">skills</h1>
 
         <div class="row skills-list">
           <div class="col"></div>
@@ -160,10 +147,10 @@
 
     <!-- Portfoliio -->
     <div class="works-div">
-      <div class="container">
+      <div class="container carousel-block">
         <h1 class="main-heading">my works</h1>
 
-        <div class="row portfolio">
+        <!-- <div class="row portfolio">
           <div class="col"></div>
           <div class="col portfolio-links">
             <a href="https://github.com/moiscraycray/CFA---Project-1" target="_blank"><img src="./images/trent_edited.png" alt="Trent or Not"></a>
@@ -175,9 +162,45 @@
             <a href="https://amaysim.herokuapp.com/" target="_blank"><img src="./images/amaysim_edited.png"  alt="Amaysim"></a>
           </div>
           <div class="col"></div>
-        </div> <!-- end row portfolio div -->
+        </div>  end row portfolio div -->
 
-      </div> <!-- end container div -->
+        <input type="radio" id="i1" name="images" checked/>
+        <input type="radio" id="i2" name="images" />
+        <input type="radio" id="i3" name="images" />
+
+        <div class="slide_img" id="one">
+
+            <a href="https://github.com/moiscraycray/CFA---Project-1" target="_blank"><img src="./images/trent_title.png" alt="Trent or Not"></a>
+
+              <label class="prev" for="i4"><span></span></label>
+              <label class="next" for="i2"><span></span></label>
+
+        </div>
+
+        <div class="slide_img" id="two">
+
+            <a href="https://github.com/moiscraycray/Tokyo-Olympics-2020" target="_blank"><img src="./images/tokyo_edited.png" alt="Tokyo Olympics 2020 Redesign Homepage"></a>
+
+              <label class="prev" for="i1"><span></span></label>
+              <label class="next" for="i3"><span></span></label>
+
+        </div>
+
+        <div class="slide_img" id="three">
+            <a href="https://amaysim.herokuapp.com/" target="_blank"><img src="./images/amaysim_edited.png"  alt="Amaysim"></a>
+
+              <label class="prev" for="i2"><span></span></label>
+              <label class="next" for="i4"><span></span></label>
+        </div>
+
+        <div id="nav_slide">
+          <label for="i1" class="dots" id="dot1"></label>
+          <label for="i2" class="dots" id="dot2"></label>
+          <label for="i3" class="dots" id="dot3"></label>
+        </div>
+
+
+      </div>  <!-- end container div -->
     </div> <!-- end works-div -->
     <!-- end Portfoliio -->
 
@@ -222,6 +245,6 @@
     <!-- end Pacman -->
 
 
-
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
