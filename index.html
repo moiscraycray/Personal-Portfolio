@@ -10,6 +10,7 @@
     crossorigin="anonymous"> <!-- bootstrap cdn -->
     <link rel="stylesheet" href="./style.css"> <!-- css link -->
     <!-- <script type="text/javascript" src="./pacman.js"></script>  javascript link -->
+    <script type="text/javascript" src="nav.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"> <!-- favicon -->
     <script src="https://use.fontawesome.com/bbdaecabea.js"></script> <!-- font awesome cdn -->
@@ -18,8 +19,24 @@
 
   <body>
 
+    <!-- Navigation -->
+    <nav class="Quick-navigation">
+      <a href="#landing-cover-part" class="Quick-navigation-item">home</a>
+      <a href="#about-me-part" class="Quick-navigation-item">about</a>
+      <a href="#timeline-part" class="Quick-navigation-item">timeline</a>
+      <a href="#skills-part" class="Quick-navigation-item">skills</a>
+      <a href="#my-works-part" class="Quick-navigation-item">portfolio</a>
+      <a href="#contact-me-part" class="Quick-navigation-item">contact</a>
+      <div class="Scroll-progress-indicator"></div>
+    </nav>
+    <script type="text/javascript" src="nav.js"></script>
+
+    <!-- end Navigation -->
+
     <!-- Landing video cover -->
-    <div class="hero-wrapper">
+
+    <section id="landing-cover-part" class="js-scroll-step">
+    <div class="hero-wrapper hidden-md-down">
       <div class="hero">
         <figure>
           <video loop="loop" muted="muted" autoplay="autoplay">
@@ -29,21 +46,23 @@
       </div>
     </div>
     <div class="logo-img">
-      <img src="./M/transparent_m_white.png" alt="">
+      <img class="img-responsive" src="./M/transparent_m_white.png" alt="">
     </div>
     <div class="scroll-down">
       <h2>scroll</h2>
       <span>▼</span>
     </div>
+    </section>
     <!-- video parallax https://codepen.io/ezeikel/pen/rVdbQE -->
 
     <!-- end Landing video cover -->
 
     <!-- About -->
+    <section id="about-me-part" class="js-scroll-step">
     <div class="about-me-div">
 
       <div class="container">
-        <h1 class="main-heading">about me</h1>
+        <h1 class="main-heading about-heading">about me</h1>
         <div class="image-me">
           <img class="me" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA26AAAAJDI5YjM2ZGFkLWQ5YTItNGEwOC05MDBhLWU3MGJmM2VhYjM1Mw.jpg" alt="olivia">
         </div>
@@ -83,10 +102,13 @@
 
       </div> <!-- end container div -->
     </div> <!-- end about-me-div -->
+    </section>
     <!-- end about -->
 
     <!-- What I've been up to  -->
+    <section id="timeline-part" class="js-scroll-step">
     <div class="experience-div">
+      <h1 class="main-heading">what i've been up to</h1>
         <section class="timeline">
           <ul>
             <li>
@@ -111,12 +133,14 @@
             </li>
           </ul>
         </section>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js"></script> <!-- have to "call" the js here for some reason -->
       <!--</div>   end container div -->
     </div> <!-- end experience div -->
+    </section>
     <!-- end What I've been up to  -->
 
     <!-- Skills -->
+    <section id="skills-part" class="js-scroll-step">
     <div class="skills-div">
       <div class="container">
         <h1 class="main-heading skills-heading">skills</h1>
@@ -143,14 +167,16 @@
 
       </div> <!-- end container -->
     </div> <!-- skills-div -->
+    </section>
     <!-- end Skills -->
 
     <!-- Portfoliio -->
+    <section id="my-works-part" class="js-scroll-step">
     <div class="works-div">
       <div class="container carousel-block">
-        <h1 class="main-heading">my works</h1>
+        <h1 class="main-heading works-heading">my works</h1>
 
-        <!-- <div class="row portfolio">
+        <div class="row portfolio">
           <div class="col"></div>
           <div class="col portfolio-links">
             <a href="https://github.com/moiscraycray/CFA---Project-1" target="_blank"><img src="./images/trent_edited.png" alt="Trent or Not"></a>
@@ -162,52 +188,18 @@
             <a href="https://amaysim.herokuapp.com/" target="_blank"><img src="./images/amaysim_edited.png"  alt="Amaysim"></a>
           </div>
           <div class="col"></div>
-        </div>  end row portfolio div -->
-
-        <input type="radio" id="i1" name="images" checked/>
-        <input type="radio" id="i2" name="images" />
-        <input type="radio" id="i3" name="images" />
-
-        <div class="slide_img" id="one">
-
-            <a href="https://github.com/moiscraycray/CFA---Project-1" target="_blank"><img src="./images/trent_title.png" alt="Trent or Not"></a>
-
-              <label class="prev" for="i4"><span></span></label>
-              <label class="next" for="i2"><span></span></label>
-
-        </div>
-
-        <div class="slide_img" id="two">
-
-            <a href="https://github.com/moiscraycray/Tokyo-Olympics-2020" target="_blank"><img src="./images/tokyo_edited.png" alt="Tokyo Olympics 2020 Redesign Homepage"></a>
-
-              <label class="prev" for="i1"><span></span></label>
-              <label class="next" for="i3"><span></span></label>
-
-        </div>
-
-        <div class="slide_img" id="three">
-            <a href="https://amaysim.herokuapp.com/" target="_blank"><img src="./images/amaysim_edited.png"  alt="Amaysim"></a>
-
-              <label class="prev" for="i2"><span></span></label>
-              <label class="next" for="i4"><span></span></label>
-        </div>
-
-        <div id="nav_slide">
-          <label for="i1" class="dots" id="dot1"></label>
-          <label for="i2" class="dots" id="dot2"></label>
-          <label for="i3" class="dots" id="dot3"></label>
-        </div>
-
+        </div> <!-- end row portfolio div -->
 
       </div>  <!-- end container div -->
     </div> <!-- end works-div -->
+    </section>
     <!-- end Portfoliio -->
 
     <!-- Contact me -->
+    <section id="contact-me-part" class="js-scroll-step">
     <div class="contact-me-div">
       <div class="container">
-        <h1 class="main-heading">contact me</h1>
+        <h1 class="main-heading contact-heading">contact me</h1>
 
         <div class="row">
           <div class="col contact-me-icons">
@@ -230,7 +222,10 @@
 
       </div> <!-- end container div -->
     </div> <!-- end contact-me-div -->
+    </section>
     <!-- end Contact me -->
+
+    <button class="Scroll-to-top">Scroll To Top</button>
 
     <!-- Pacman -->
     <!-- <div class="row">
@@ -246,5 +241,6 @@
 
 
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 </html>
