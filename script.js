@@ -1,3 +1,6 @@
+
+
+// TIMELINE SECTION
 (function() {
 
   'use strict';
@@ -31,3 +34,5 @@
   window.addEventListener("scroll", callbackFunc);
 
 })();
+
+// END TIMELINE SECTION
