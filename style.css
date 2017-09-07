@@ -1,4 +1,14 @@
+* {
+  color: white;
+}
+
 /*NAVIGATION*/
+@media (max-width: 767px) {
+   .content-to-hide {
+      display: none;
+   }
+}
+
 .Quick-navigation {
 	position: fixed;
 	z-index: 1;
@@ -15,6 +25,7 @@
 	transition: color 0.3s;
 	padding: 0.5em;
 	display: block;
+  text-align: right;
 }
 
 .Quick-navigation-item:hover, .Quick-navigation-item.current {
@@ -68,46 +79,52 @@
 /*END NAVIGATION*/
 
 /*LANDING COVER*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
 * {
-  font-family: "Open Sans";
   box-sizing: border-box;
-  text-align: center;
-  color: #fff;
 }
-
-/*html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}*/
-
-figure {
-  margin: 0;
-  position: relative;
-}
-
-video {
-  width: 100%;
-  max-width: 100%;
-}
-
-.hero-wrapper {
+.video-background {
+  background: #000;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  height: auto;
-  width: auto;
-  min-height: 100%;
-  min-width: 100%;
+  top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
 }
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
 
-.scroll-down {
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+.logo-img img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-down-here {
   text-align: center;
-  padding-top: 8%;
-  /*padding-bottom: 1%;*/
+  padding-top: 10%
 }
 
 /*END LANDING COVER*/
@@ -122,7 +139,6 @@ video {
 
 .main-heading {
   text-align: center;
-  padding-top: 50px;
 }
 
 .about-me-heading {
@@ -132,6 +148,7 @@ video {
 @media (min-width: 768px) {
   .about-me-div {
     min-height: 800px;
+    margin-top: 13%;
   }
 }
 
@@ -166,6 +183,9 @@ video {
   height: 100%;
   background: #3383ff;
   background-size: cover;
+}
+.experience-heading{
+  padding-top: 5%;
 }
 /*.experience-list {
   text-align: center;
@@ -328,10 +348,17 @@ time {
 .skills-heading {
   text-align: center;
   padding-top: 25%;
+  padding-bottom: 5%;
 }
 
 .font-mfizz {
   font-size: 5em;
+}
+.skills-list {
+  text-align: center;
+}
+.fa {
+  padding-bottom: 30px;
 }
 /*END SKILLS SECTION*/
 
@@ -349,16 +376,18 @@ time {
 }
 .works-heading {
   padding-top: 25%;
+  padding-bottom: 5%;
 }
-/*.size {
-  max-width: 100%;
-  height: auto;
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;
+.portfolio-links {
+  display: block;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.portfolio-links img {
   border-radius: 5px;
-}*/
-
+}
 /*END PORTFOLIO SECTION*/
 
 /*CONTACT ME SECTION*/
@@ -375,15 +404,15 @@ time {
 }
 .contact-heading {
   padding-top: 25%;
+  padding-bottom: 5%;
 }
 .contact-me-icons {
   text-align: center;
+  padding-bottom: 2%;
 }
 
-.social-media-icons i {
+.social-media-icons {
   text-align: center;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .social-media-icons i{
@@ -398,28 +427,3 @@ time {
   color: white;
 }
 /*END CONTACT ME SECTION*/
-
-/* PACMAN SECTION */
-
-/*body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-} */
-
-/*.pacman {
-  margin: 0 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pacman:first-child {
-  margin-left: 0;
-  margin-right: 45px;
-}
-
-.pacman:last-child {
-  margin-right: 0;
-}*/
