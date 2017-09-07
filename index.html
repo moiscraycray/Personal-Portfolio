@@ -20,7 +20,7 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="Quick-navigation">
+    <nav class="Quick-navigation content-to-hide">
       <a href="#landing-cover-part" class="Quick-navigation-item">home</a>
       <a href="#about-me-part" class="Quick-navigation-item">about</a>
       <a href="#timeline-part" class="Quick-navigation-item">timeline</a>
@@ -36,7 +36,7 @@
     <!-- Landing video cover -->
 
     <section id="landing-cover-part" class="js-scroll-step">
-    <div class="hero-wrapper hidden-md-down">
+    <!-- <div class="hero-wrapper hidden-md-down">
       <div class="hero">
         <figure>
           <video loop="loop" muted="muted" autoplay="autoplay">
@@ -44,12 +44,19 @@
           </video>
         </figure>
       </div>
+    </div> -->
+    <div class="video-background">
+      <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/JwfX2JmtfrU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=JwfX2JmtfrU"
+        frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-    <div class="logo-img">
+
+    <div class="container logo-img">
       <img class="img-responsive" src="./M/transparent_m_white.png" alt="">
     </div>
-    <div class="scroll-down">
-      <h2>scroll</h2>
+    <div class="container scroll-down-here">
+      <h4>scroll</h4>
       <span>▼</span>
     </div>
     </section>
@@ -108,7 +115,7 @@
     <!-- What I've been up to  -->
     <section id="timeline-part" class="js-scroll-step">
     <div class="experience-div">
-      <h1 class="main-heading">what i've been up to</h1>
+      <h1 class="main-heading experience-heading">what i've been up to</h1>
         <section class="timeline">
           <ul>
             <li>
@@ -146,23 +153,21 @@
         <h1 class="main-heading skills-heading">skills</h1>
 
         <div class="row skills-list">
-          <div class="col"></div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg">
             <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg">
             <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
           </div>
-          <div class="col font-mfizz">
+          <div class="col-sm-12 col-md-6 col-lg font-mfizz">
             <i class="icon-ruby"></i> <!-- Had to use mfizz for the following icons because font awesome is missing them -->
           </div>
-          <div class="col font-mfizz">
+          <div class="col-sm-12 col-md-6 col-lg font-mfizz">
             <i class="icon-bootstrap"></i>
           </div>
-          <div class="col font-mfizz">
+          <div class="col-sm-12 col-md-12 col-lg font-mfizz">
             <i class="icon-ruby-on-rails-alt"></i>
           </div>
-          <div class="col"></div>
         </div> <!-- end row skills-list -->
 
       </div> <!-- end container -->
@@ -177,17 +182,15 @@
         <h1 class="main-heading works-heading">my works</h1>
 
         <div class="row portfolio">
-          <div class="col"></div>
-          <div class="col portfolio-links">
+          <div class="col-sm-12 col-md-4 col-lg-4 portfolio-links">
             <a href="https://github.com/moiscraycray/CFA---Project-1" target="_blank"><img src="./images/trent_edited.png" alt="Trent or Not"></a>
           </div>
-          <div class="col portfolio-links">
+          <div class="col-sm-12 col-md-4 col-lg-4 portfolio-links">
             <a href="https://github.com/moiscraycray/Tokyo-Olympics-2020" target="_blank"><img src="./images/tokyo_edited.png" alt="Tokyo Olympics 2020 Redesign Homepage"></a>
           </div>
-          <div class="col portfolio-links">
+          <div class="col-sm-12 col-md-4 col-lg-4 portfolio-links">
             <a href="https://amaysim.herokuapp.com/" target="_blank"><img src="./images/amaysim_edited.png"  alt="Amaysim"></a>
           </div>
-          <div class="col"></div>
         </div> <!-- end row portfolio div -->
 
       </div>  <!-- end container div -->
@@ -205,17 +208,25 @@
           <div class="col contact-me-icons">
             <i class="fa fa-envelope fa-1x" aria-hidden="true"></i> oliviatymo@gmail.com
           </div>
-          <div class="col contact-me-icons">
+          <!-- <div class="col contact-me-icons">
             <i class="fa fa-mobile fa-1x" aria-hidden="true"></i> 0479 020 383
-          </div>
+          </div> -->
         </div>
 
         <div class="row">
-          <div class="col social-media-icons">
+          <div class="col-sm-12 col-md-6 col-lg social-media-icons">
             <a href="https://stackoverflow.com/users/6147947/cheese425?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-5x" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg social-media-icons">
             <a href="https://www.facebook.com/oliviatmo" target="_blank"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg social-media-icons">
             <a href="https://www.linkedin.com/in/olivia-mo-b13333b6/" target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg social-media-icons">
             <a href="https://steamcommunity.com/id/imdagiver" target="_blank"><i class="fa fa-steam-square fa-5x" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg social-media-icons">
             <a href="https://github.com/moiscraycray" target="_blank"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
           </div>
         </div>
@@ -227,17 +238,6 @@
 
     <button class="Scroll-to-top">Scroll To Top</button>
 
-    <!-- Pacman -->
-    <!-- <div class="row">
-      <div class="col pacman">
-        <div class="pacman"></div>
-        <div class="blinky"></div>
-        <div class="pinky"></div>
-        <div class="inky"></div>
-        <div class="clyde"></div>
-      </div>
-    </div> -->
-    <!-- end Pacman -->
 
 
     <script type="text/javascript" src="script.js"></script>
