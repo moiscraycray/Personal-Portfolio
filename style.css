@@ -1,6 +1,24 @@
 * {
-  color: white;
-  font-family: 'Raleway', sans-serif
+  color: rgba(0,0,0,0.75);
+  font-family: 'Raleway', sans-serif;
+}
+
+.scroll-down-here {
+  color: rgba(255, 255, 255, 0.75);
+}
+.scroll-down-here span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.ultimate-bg {
+  /*background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #FFDEE9 50%, #B5FFFC 100%);*/
+
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #fba6c2 50%, #B5FFFC 100%);
+
+  /*from grabient*/
+
 }
 
 /*LANDING COVER*/
@@ -45,6 +63,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 45%;
+  height: auto;
 }
 
 .scroll-down-here {
@@ -58,7 +78,7 @@
 .about-me-div {
   height: 100%;
   /*background: #FFAF33;*/
-  background: #4BBCF4;
+  /*background: #4BBCF4;*/
   min-width: 100%;
   background-size: cover;
 }
@@ -109,7 +129,7 @@
   height: 100%;
   /*background: #3383ff;*/
 
-  background: #FAE3D9;
+  /*background: #FAE3D9;*/
   background-size: cover;
 }
 .experience-heading{
@@ -128,8 +148,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  /*background: #3383ff;*/
-  background: #FAE3D9;
   padding: 50px 0;
 }
 
@@ -160,6 +178,7 @@
   width: 400px;
   padding: 15px;
   background: #F45B69;
+  color: white;
 }
 
 .timeline ul li div::before {
@@ -196,6 +215,7 @@ time {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
+  color: white;
 }
 
 
@@ -266,7 +286,7 @@ time {
 .skills-div {
   height: 100%;
   /*background: tomato;*/
-  background: #BBDED6;
+  /*background: #BBDED6;*/
   min-width: 100%;
   background-size: cover;
 }
@@ -296,7 +316,7 @@ time {
 .works-div {
   height: 100%;
   /*background: #34A853;*/
-  background: #FFB6B9;
+  /*background: #FFB6B9;*/
   min-width: 100%;
   background-size: cover;
 }
@@ -318,7 +338,7 @@ time {
   margin-left: 0 auto;
   margin-right: 0 auto;
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
 }
 .portfolio-links img {
   border-radius: 5px;
@@ -339,7 +359,7 @@ time {
 .contact-me-div {
   height: 100%;
   /*background: #FFAF33;*/
-  background: #61C0BF;
+  /*background: #61C0BF;*/
   min-width: 100%;
   background-size: cover;
 }
@@ -362,7 +382,7 @@ time {
 }
 
 .social-media-icons i{
-  color: white;
+  color: rgba(0,0,0,0.75);
 }
 
 .social-media-icons i:hover {
@@ -370,6 +390,6 @@ time {
 }
 
 .social-media-icons i:visited {
-  color: white;
+  color: rgba(0,0,0,0.75);
 }
 /*END CONTACT ME SECTION*/
